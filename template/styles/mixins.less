@@ -1,0 +1,102 @@
+// out: null
+
+/* Parametric mixin for headings */
+
+.headingStyle(@paramColor: @color2; @paramSize: 7em) {
+    color: @paramColor; 
+    font-size: @paramSize; 
+    font-weight: bold;
+    text-align: center;
+    line-height: @paramSize;
+    margin-top: @paramSize / 3;
+    margin-bottom: @paramSize / 3;
+    text-transform: uppercase;
+}
+
+/* End parametric mixin for headings */
+
+.borderAndColor(@paramBorder: 10px; @paramColor: #000) {
+    -moz-border-radius: @paramBorder;
+    -webkit-border-radius: @paramBorder;
+    border-radius: @paramBorder;
+    background-color: @paramColor;
+}
+
+.dropShadow(@paramStyle: 0 0 5px; @paramColor: @darkColor1) {
+	box-shadow:  @paramStyle @paramColor;
+	-moz-box-shadow: @paramStyle @paramColor;
+	-webkit-box-shadow: @paramStyle @paramColor;
+	-o-box-shadow: @paramStyle @paramColor;
+    width: 175px; 
+    height: 25px;
+	border: solid 1px #555;
+    padding-top: 1px;
+}
+
+.gradient(@direction: left; @start: #ccc; @stop: #aaa) {
+    background: linear-gradient(@direction, @start, @stop);
+}
+
+.expand() {
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+.opacity() {
+    opacity: 0.5;
+}
+
+.textTrans() {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.big() {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.flip() {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.border() {
+    border: 2px solid @color2;
+    border-radius: 2px;
+}
+
+.background() {
+    background-color: @color3;
+    opacity: 0.9;
+}
+
+.grad() {
+    background: linear-gradient(to bottom right, @color4, @lightColor1);
+}
+
+.box() {
+    box-shadow: 10px 10px 5px @darkColor3;
+}
+
+/* Image Collage 
+=absolute($top, $left, $right, $bottom)
+	position: absolute
+	top: $top
+	left: $left
+	right: $right
+	bottom: $bottom
+
+=translate($x,$y)
+	-webkit-transform: translate($x,$y)
+	-webkit-transform: translate3d($x,$y,0)
+	-ms-transform: translate($x,$y)
+	-ms-transform: translate3d($x,$y,0)
+	transform: translate($x,$y)
+	transform: translate3d($x,$y,0)
+
+End Image Collage */
