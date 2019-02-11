@@ -23,7 +23,7 @@
     <?php include 'includes/nav.inc.html.php'; ?>
 
      <main>
-         <section class=collage>
+         <section class="collage">
              
              <p>Image Collage goes here</p>
              
@@ -40,7 +40,7 @@
                 
             </aside>
 
-         <section class=form>
+         <section class="form">
              
             <form>
                 
@@ -52,7 +52,7 @@
              
          </section>
 
-         <section class=weather>
+         <section class="weather">
              
              <h2>Heading 2 (h2)</h2>
              

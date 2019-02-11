@@ -179,8 +179,8 @@ footer p {
 }
 .fotternav {
   padding: 1em;
-  word-spacing: 2em;
-  font-size: 1.25em;
+  word-spacing: 1.5em;
+  font-size: 1em;
   color: #ffffff;
   text-decoration: none;
   list-style-type: none;
@@ -247,6 +247,11 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     padding: 15px;
     color: #ffffff;
     margin: 20px;
+  }
+  .fotternav {
+    padding: 1em;
+    word-spacing: 2em;
+    font-size: 1em;
   }
 }
 /*
