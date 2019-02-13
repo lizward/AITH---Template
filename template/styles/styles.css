@@ -20,6 +20,16 @@
 End Image Collage */
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
 /* MOBILE STYLESHEET */
+.header {
+  padding: 15px 15px;
+  margin: auto;
+  position: relative;
+  background-color: #151515;
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  font-size: 1.25em;
+}
 .fa {
   padding: 20px;
   font-size: 45px;
@@ -36,34 +46,8 @@ a {
 nav li {
   text-decoration: none;
   list-style-type: none;
+  font-family: Roboto, tahoma, sans-serif;
   padding: 0.2em;
-}
-.header {
-  padding: 15px 15px;
-  margin: auto;
-  position: relative;
-  background-color: #151515;
-  text-align: center;
-  dispaly: block;
-  color: #ffffff;
-  font-size: 1.25em;
-}
-.collage {
-  padding: 45px;
-}
-aside {
-  background-color: #808080;
-  padding: 45px;
-  color: #ffffff;
-}
-.form {
-  padding: 45px;
-}
-.weather {
-  background-color: #808080;
-  padding: 15px;
-  color: #ffffff;
-  margin-bottom: 10px;
 }
 /* Hamburger Menu */
 nav {
@@ -71,15 +55,15 @@ nav {
   padding: 0;
 }
 nav ul {
-  display: flex;
+  display: block;
   flex-direction: column;
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: none;
 }
-nav ul.opening {
-  display: inline-block;
+.opening {
+  display: block;
   height: 30px;
 }
 nav li {
@@ -146,17 +130,6 @@ nav a:focus {
   transform: translateY(-1px) rotate(-90deg);
 }
 /* End Hamburger Menu */
-body {
-  background: #ffffff;
-  color: #151218;
-}
-body p {
-  font-family: Roboto, tahoma, sans-serif;
-}
-h1,
-h2 {
-  font-family: Raleway, sans-serif;
-}
 #wrapper {
   margin: 0 auto;
   text-align: center;
@@ -168,10 +141,39 @@ h2 {
   text-transform: uppercase;
   font-weight: bold;
 }
+body {
+  background: #ffffff;
+  color: #151218;
+}
+body p {
+  font-family: Roboto, tahoma, sans-serif;
+}
+h1,
+h2 {
+  font-family: Raleway, sans-serif;
+}
+.collage {
+  padding: 45px;
+}
+aside {
+  background-color: #808080;
+  padding: 45px;
+  color: #ffffff;
+}
+.form {
+  padding: 45px;
+}
+.weather {
+  background-color: #808080;
+  padding: 15px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
 footer {
   background-color: #151218;
   color: #ffffff;
   text-align: center;
+  font-family: Roboto, tahoma, sans-serif;
 }
 footer p {
   font-size: 0.7em;
@@ -204,7 +206,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 @media only screen and (min-width: 481px) {
   .topnav {
     background-color: #ffffff;
-    overflow: hidden;
+    overflow: visible;
   }
   .topnav a {
     float: left;
@@ -221,6 +223,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   }
   .topnav a {
     text-decoration: none;
+    font-family: Roboto, tahoma, sans-serif;
   }
   .topnav a:link {
     color: #151218;
@@ -278,7 +281,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     padding: 1.5em 1.3em 1.5em 1.3em;
     margin: 0;
     border: none;
-    background-color: #f04343;
+    background-color: #ff0000;
   }
   nav a:hover,
   nav a:focus {
@@ -294,6 +297,6 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    background-color: #f04343;
+    background-color: #ff0000;
   }
 }

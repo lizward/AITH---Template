@@ -4,6 +4,17 @@
 
 /* MOBILE STYLESHEET */
 
+.header {
+    padding: 15px 15px;
+    margin: auto;
+    position: relative;
+    background-color: @greyColor2;
+    text-align: center;
+    display: block;  
+    color: @color3;
+    font-size: 1.25em;
+}
+
 .fa {
     padding: 20px;
     font-size: 45px;
@@ -23,40 +34,9 @@ nav {
     li {
         text-decoration: none;
         list-style-type: none;
+         font-family: Roboto, tahoma, sans-serif;
         padding: 0.2em;
     }
-}
-    
-.header {
-    padding: 15px 15px;
-    margin: auto;
-    position: relative;
-    background-color: @greyColor2;
-    text-align: center;
-    dispaly: block;  
-    color: @color3;
-    font-size: 1.25em;
-}
-
-.collage {
-    padding: 45px;
-}
-
-aside {
-    background-color: @greyColor1;
-    padding: 45px;
-    color: @color3;
-}
-
-.form {
-    padding: 45px;
-}
-
-.weather {
-    background-color: @greyColor1;
-    padding: 15px;
-    color: @color3;
-    margin-bottom: 10px;
 }
 
 /* Hamburger Menu */
@@ -67,7 +47,7 @@ nav {
 }
 
 nav ul {
-  display: flex;
+  display: block;
   flex-direction: column;
   list-style-type: none;
   padding: 0;
@@ -75,12 +55,14 @@ nav ul {
   display: none;
 }
 
-nav ul.opening {
-  display: inline-block;
+.opening {
+  display: block;
   height: 30px;
-}
+}   
 
-nav li { border-bottom: 1px solid #f6f4e2; }
+nav li { 
+    border-bottom: 1px solid #f6f4e2;
+}
 
 nav li:last-child { border-bottom: none; }
 
@@ -93,7 +75,10 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover, nav a:focus { background: @lightColor1; }
+nav a:hover, nav a:focus { 
+    background: @lightColor1;
+    
+}
 
 .site-nav--icon {
   font-size: 1.4em;
@@ -146,6 +131,15 @@ nav a:hover, nav a:focus { background: @lightColor1; }
 
 /* End Hamburger Menu */
 
+#wrapper {
+    margin: 0 auto;
+    text-align: center;
+    .background;
+    h1, h2 {
+        .big();  
+    }
+}
+
 body {
     background: @color3;
     color: @color2;
@@ -158,19 +152,32 @@ h1, h2 {
     font-family: Raleway, sans-serif;    
 }
 
-#wrapper {
-    margin: 0 auto;
-    text-align: center;
-    .background;
-    h1, h2 {
-        .big();  
-    }
+.collage {
+    padding: 45px;
+}
+
+aside {
+    background-color: @greyColor1;
+    padding: 45px;
+    color: @color3;
+}
+
+.form {
+    padding: 45px;
+}
+
+.weather {
+    background-color: @greyColor1;
+    padding: 15px;
+    color: @color3;
+    margin-bottom: 10px;
 }
 
 footer {
     background-color: @color2;
     color: @color3;
     text-align: center;
+    font-family: Roboto, tahoma, sans-serif;
         p { 
             font-size: 0.7em;
             padding-bottom: 15px;
@@ -195,7 +202,6 @@ footer {
             color: @color1;
         }
 }
-    
 
 /*
 
@@ -209,7 +215,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     
 .topnav {
     background-color: @color3;
-    overflow: hidden;
+    overflow: visible;
         a {
             float: left;
             display: block;
@@ -227,6 +233,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 
 .topnav a {
     text-decoration: none;
+    font-family: Roboto, tahoma, sans-serif;
     &:link {
         color: @color2;
     }
@@ -290,7 +297,7 @@ nav li a {
   padding: 1.5em 1.3em 1.5em 1.3em;
   margin: 0;
   border: none;
-  background-color: #f04343;
+  background-color: @color1;
 }
 
 nav a:hover,  nav a:focus { background-color: rgba(255,255,255,.10); }
@@ -306,7 +313,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
-  background-color: #f04343;
+  background-color: @color1;
 }
 
 }
