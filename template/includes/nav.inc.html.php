@@ -2,7 +2,7 @@
     <div class="menu-toggle">
         <div class="hamburger"></div>
     </div>
-            <ul class="open-desktop">
+            <ul class="open desktop">
                 <li><a href="<?php echo BASE_URL; ?>">Home</a></li>
                 <li><a href="<?php echo BASE_URL; ?>">Registration</a></li>
                 <li><a href="<?php echo BASE_URL; ?>">Contact</a></li>

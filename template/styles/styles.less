@@ -10,7 +10,6 @@
     position: relative;
     background-color: @greyColor2;
     text-align: center;
-    display: block;  
     color: @color3;
     font-size: 1.25em;
 }
@@ -30,15 +29,6 @@ a {
     list-style-type: none;
 }
 
-nav {
-    li {
-        text-decoration: none;
-        list-style-type: none;
-         font-family: Roboto, tahoma, sans-serif;
-        padding: 0.2em;
-    }
-}
-
 /* Hamburger Menu */
 
 nav {
@@ -47,24 +37,28 @@ nav {
 }
 
 nav ul {
-  display: block;
+  display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 0;
+  padding: 5px;
   margin: 0;
   display: none;
+  text-decoration: none;
+  font-family: Roboto, tahoma, sans-serif;
 }
 
 .opening {
-  display: block;
-  height: 30px;
+        display: block;
+        height: 65px;
 }   
 
 nav li { 
     border-bottom: 1px solid #f6f4e2;
 }
 
-nav li:last-child { border-bottom: none; }
+nav li:last-child { 
+    border-bottom: none;
+}
 
 nav a {
   color: #EBEBD3;
@@ -153,7 +147,8 @@ h1, h2 {
 }
 
 .collage {
-    padding: 45px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 aside {

@@ -26,7 +26,6 @@ End Image Collage */
   position: relative;
   background-color: #151515;
   text-align: center;
-  display: block;
   color: #ffffff;
   font-size: 1.25em;
 }
@@ -43,28 +42,24 @@ a {
   text-decoration: none;
   list-style-type: none;
 }
-nav li {
-  text-decoration: none;
-  list-style-type: none;
-  font-family: Roboto, tahoma, sans-serif;
-  padding: 0.2em;
-}
 /* Hamburger Menu */
 nav {
   margin: 0;
   padding: 0;
 }
 nav ul {
-  display: block;
+  display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 0;
+  padding: 5px;
   margin: 0;
   display: none;
+  text-decoration: none;
+  font-family: Roboto, tahoma, sans-serif;
 }
 .opening {
   display: block;
-  height: 30px;
+  height: 65px;
 }
 nav li {
   border-bottom: 1px solid #f6f4e2;
@@ -153,7 +148,8 @@ h2 {
   font-family: Raleway, sans-serif;
 }
 .collage {
-  padding: 45px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 aside {
   background-color: #808080;
