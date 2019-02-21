@@ -125,21 +125,21 @@ nav a:hover, nav a:focus {
 
 /* End Hamburger Menu */
 
-#wrapper {
-    margin: 0 auto;
-    text-align: center;
-    .background;
-    h1, h2 {
-        .big();  
-    }
-}
+
 
 body {
     background: @color3;
     color: @color2;
-    p {
-        font-family: Roboto, tahoma, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Roboto, tahoma, sans-serif;
+    .background;
+    h1, h2 {
+        .big();  
     }
+        p {
+            font-family: Roboto, tahoma, sans-serif;
+        }
 }
 
 h1, h2 {
@@ -157,11 +157,58 @@ aside {
     color: @color3;
 }
 
-.form {
-    padding: 45px;
+section {
+    a {
+        color: @color1;
+    }
+}
+
+form {
+    font-family: Roboto, tahoma, sans-serif;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    h2 {
+        font-family: Raleway, sans-serif;
+    }
+        input, textarea, select, button {
+            width: 80%;
+            margin-right: 10px;
+            line-height: 1.5em;
+        }
+            label {
+                width: 100%;
+                font-weight: bold;
+                line-height: 2em;
+                margin-top: 1.5em;
+                margin-bottom:1.5em;
+
+            }
+                textarea {
+                    margin-top: 1.5em;
+                }
+                    input.radio {
+                        display: block;
+                        left: -60px;
+                        top: 15px;
+                        position: relative;
+                    }
+    
+}
+
+input#mysubmit {
+    width: 40%;
+    text-align: center;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+#honeypot {
+    display: none;
 }
 
 .weather {
+    clear: both;
     background-color: @greyColor1;
     padding: 15px;
     color: @color3;
@@ -250,7 +297,7 @@ aside {
     color: @color3;
     margin: 20px;
 }
-   
+    
 .weather {
     background-color: @greyColor1;
     padding: 15px;
@@ -264,6 +311,17 @@ aside {
     font-size: 1em;
     }
 }
+
+form {
+    font-family: Roboto, tahoma, sans-serif;
+    input, textarea, select, button {
+            width: 70%;
+            margin-right: 10px;
+            box-sizing: border-box;
+            line-height: 1.5em;
+        }
+}
+
 
 /*
 
@@ -311,4 +369,40 @@ nav {
   background-color: @color1;
 }
 
+    .form {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    p {
+        font-family: Roboto, tahoma, sans-serif;
+        padding: 25px;
+        height: 100%;
+    }
+    a {
+        font-family: Roboto, tahoma, sans-serif;
+    }
+}
+
+.radio {
+    display: inline-block;
+    font-family: Roboto, tahoma, sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%
+    postion: relative;
+   
+}
+
+label {
+    clear: both;
+    display: inline-block;
+    width: 20em;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: center;
+    margin-right: 15px;
+    padding: 10px;
+    font-family: Roboto, tahoma, sans-serif;
+}
+    
 }

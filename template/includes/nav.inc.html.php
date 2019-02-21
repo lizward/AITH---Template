@@ -3,9 +3,9 @@
         <div class="hamburger"></div>
     </div>
             <ul class="open desktop">
-                <li><a href="<?php echo BASE_URL; ?>">Home</a></li>
-                <li><a href="<?php echo BASE_URL; ?>">Registration</a></li>
-                <li><a href="<?php echo BASE_URL; ?>">Contact</a></li>
+                <li><a href="../home/home.html.php">Home</a></li>
+                <li><a href="../registration/registration.html.php">Registration</a></li>
+                <li><a href="../contact/contact.html.php">Contact</a></li>
                 <li><a href="<?php echo BASE_URL; ?>">About</a></li>
             </ul>
 
